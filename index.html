@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Flexible Math - A quick way to get pixel widths in percentages.</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1,user-scalable=no">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		
+</head>
+
+<body>
+
+
+	<div id="header_wrapper">
+
+		<header>
+			<h1>Flexible Math <span>A quick way to get pixel widths in percentages.</span></h1>
+			<button href="#" class="more_info">How it Works</button>
+
+		</header>
+		
+	</div>
+	
+	<div id="header_border">
+		
+		<div class="context">
+		
+			<div class="first_width samples"></div>
+			<div class="second_width samples"></div>	
+			<div class="third_width samples"></div>	
+			<div class="fourth_width samples"></div>		
+			<div class="fifth_width samples"></div>	
+			<div class="sixth_width samples"></div>	
+
+		</div>
+
+	</div>
+	
+	<div class="wrapper" id="info">
+		
+		<div>
+				
+			<p>You need your widths in percentages and all that stands between you and 2 to 17 digits of flexible-width glory is the <strong>calculator</strong>. You know that you can win the fight, but not without the pain of entering the same numbers in over and over. Then copying, pasting, moving a period and adding a percentage sign. 
+				
+			<p>In time, the calculator will suck all of the joy out of your existence. Ok, it's not that bad but using the calculator to get percentage widths does suck. I made this to help me get them faster and thought I'd share.<br />Wanna give feedback? Hit me up on <a href="http://twitter.com/dandenney">Twitter</a> or <a href="http://dandenney.wufoo.com/forms/flexible-math-feedback/">Wufoo</a>.</p>
+			
+		</div>
+			
+			<figure>
+	
+				<h2>An Example Layout</h2>
+			
+				<img src="img/explanation.png" alt="Explanation" />
+			
+				<figcaption>
+					<p>In this example: the context is <strong>960px</strong>, the first target is <strong>650px</strong>, the second target is <strong>40px</strong> and the third target is <strong>270px</strong>.</p>
+						<ul>
+							<li>Context Width = 960</li>
+							<li>1st Target = 650</li>
+							<li>2nd Target = 40</li>
+							<li>3rd Target = 270</li>
+						</ul>
+						<p>As you enter those, BOOM! You have percentages to run with and if you want, some really basic CSS to copy.</p>
+			</figcaption>
+			
+		</figure>
+		
+		<button class="more_info">Hide Info</button>
+		
+	</div>
+	
+	<div class="wrapper">
+				
+		<h2>The key thing to remember for doing math for flexible layouts is Target / Context = Result.</h2>
+			
+		<p>Enter a context width and some target widths to get percentages quickly.</p>	
+			
+	</div>
+			
+	<div class="targets_wrapper">
+		
+		<div id="results">
+		
+			<div class="context">
+			
+				<div class="first_width samples"></div>
+				<div class="second_width samples"></div>	
+				<div class="third_width samples"></div>	
+				<div class="fourth_width samples"></div>		
+				<div class="fifth_width samples"></div>	
+				<div class="sixth_width samples"></div>	
+	
+			</div>
+	
+		</div>
+		
+		<section>
+			
+			<div class="context_wrapper">
+				<label>Context Width</label>
+				<input id="context_width" type="number" placeholder="width (in pixels)">
+			</div>
+						
+			<ul id="targets">
+				<li id="first_target">
+					<label>1st Target Width</label>
+					<input id="target_one" type="number" placeholder="width (in pixels)">
+				</li>
+				<li id="second_target">
+					<label>2nd Target Width</label>
+					<input id="target_two" type="number" placeholder="width (in pixels)">
+				</li>
+				<li id="third_target" class="extra">
+					<label>3rd Target Width</label>
+					<input id="target_three" type="number" placeholder="width (in pixels)">
+				</li>
+				<li id="fourth_target" class="extra">
+					<label>4th Target Width</label>
+					<input id="target_four" type="number" placeholder="width (in pixels)">
+				</li>
+				<li id="fifth_target" class="extra">
+					<label>5th Target Width</label>
+					<input id="target_five" type="number" placeholder="width (in pixels)">
+				</li>
+				<li id="sixth_target" class="extra">
+					<label>6th Target Width</label>
+					<input id="target_six" type="number" placeholder="width (in pixels)">
+				</li>
+			</ul>
+		
+		</section>
+		
+		<div id="basic_info" class="wrapper"><p>The goal for this little script is to be quick. It would be cool to allow you to assign targets as margins, padding, etc. but it wouldn't be as quick. I want to get you back to your editor. However, you can edit this before you go...</p></div>
+		
+		<div id="basic_css" contenteditable="true" class="wrapper">
+			
+			<div id="basic_first"></div>
+			<div id="basic_second"></div>
+			<div id="basic_third"></div>
+			<div id="basic_fourth"></div>
+			<div id="basic_fifth"></div>
+			<div id="basic_sixth"></div>
+			
+		</div>
+						
+	</div>			
+		
+    <footer>
+		<p>Whipped up as a Responsv project by <a href="http://dandenney.com">Dan Denney</a></p>
+		<small>The color scheme is HEAVILY influenced by the A Book Apart Series book colors.<br />This site is in no way affiliated with them, but feel free to check out their fantastic<a href="http://www.abookapart.com"> books for people who build websites</a>.
+    </footer>
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+	<script src="js/responsive-math.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript">
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '4edffce8f5a1f50166000003');
+    t.src = '//secure.gaug.es/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
+
+
+</body>
+
+</html>
