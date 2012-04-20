@@ -15,8 +15,8 @@ function setContext() {
 function calculateFirst() {
 	var contextWidth = $("#context_width").val();
 	var firstWidth = $("#target_one").val();
-	var firstResult = (firstWidth/contextWidth);
-	var firstPercent = (firstResult * 100 + "%");
+	var firstResult = (firstWidth/contextWidth).toString();
+	var firstPercent = firstResult.replace(/\.(\d\d)/, "$1.").replace(/^0+/, "") + "%";
 	if (firstWidth > 0) {
 		$("#first_target span").remove();
 		$('<span>' + firstPercent + ";" + ' /* ' + firstWidth + ' / ' + contextWidth + ' */ </span>').appendTo('#first_target');
@@ -33,8 +33,8 @@ function calculateFirst() {
 function calculateSecond() {
 	var contextWidth = $("#context_width").val();
 	var secondWidth = $("#target_two").val();
-	var secondResult = (secondWidth/contextWidth);
-	var secondPercent = (secondResult * 100 + "%");
+	var secondResult = (secondWidth/contextWidth).toString();
+	var secondPercent = secondResult.replace(/\.(\d\d)/, "$1.").replace(/^0+/, "") + "%";
 	if (secondWidth > 0) {
 		$("#second_target span").remove();
 		$('<span>' + secondPercent + ";" + ' /* ' + secondWidth + ' / ' + contextWidth + ' */ </span>').appendTo('#second_target');
@@ -50,8 +50,8 @@ function calculateSecond() {
 function calculateThird() {
 	var contextWidth = $("#context_width").val();
 	var thirdWidth = $("#target_three").val();
-	var thirdResult = (thirdWidth/contextWidth);
-	var thirdPercent = (thirdResult * 100 + "%");
+	var thirdResult = (thirdWidth/contextWidth).toString();
+	var thirdPercent = thirdResult.replace(/\.(\d\d)/, "$1.").replace(/^0+/, "") + "%";
 	if (thirdWidth > 0) {
 		$("#third_target span").remove();
 		$('<span>' + thirdPercent + ";" + ' /* ' + thirdWidth + ' / ' + contextWidth + ' */ </span>').appendTo('#third_target');
@@ -67,8 +67,8 @@ function calculateThird() {
 function calculateFourth() {
 	var contextWidth = $("#context_width").val();
 	var fourthWidth = $("#target_four").val();
-	var fourthResult = (fourthWidth/contextWidth);
-	var fourthPercent = (fourthResult * 100 + "%");
+	var fourthResult = (fourthWidth/contextWidth).toString();
+	var fourthPercent = fourthResult.replace(/\.(\d\d)/, "$1.").replace(/^0+/, "") + "%";
 	if (fourthWidth > 0) {
 		$("#fourth_target span").remove();	
 		$('<span>' + fourthPercent + ";" + ' /* ' + fourthWidth + ' / ' + contextWidth + ' */ </span>').appendTo('#fourth_target');
@@ -84,8 +84,8 @@ function calculateFourth() {
 function calculateFifth() {
 	var contextWidth = $("#context_width").val();
 	var fifthWidth = $("#target_five").val();
-	var fifthResult = (fifthWidth/contextWidth);
-	var fifthPercent = (fifthResult * 100 + "%");
+	var fifthResult = (fifthWidth/contextWidth).toString();
+	var fifthPercent = fifthResult.replace(/\.(\d\d)/, "$1.").replace(/^0+/, "") + "%";
 	if (fifthWidth > 0) {
 		$("#fifth_target span").remove();
 		$('<span>' + fifthPercent + ";" + ' /* ' + fifthWidth + ' / ' + contextWidth + ' */ </span>').appendTo('#fifth_target');
@@ -101,8 +101,8 @@ function calculateFifth() {
 function calculateSixth() {
 	var contextWidth = $("#context_width").val();
 	var sixthWidth = $("#target_six").val();
-	var sixthResult = (sixthWidth/contextWidth);
-	var sixthPercent = (sixthResult * 100 + "%");
+	var sixthResult = (sixthWidth/contextWidth).toString();
+	var sixthPercent = sixthResult.replace(/\.(\d\d)/, "$1.").replace(/^0+/, "") + "%";
 	if (sixthWidth > 0) {
 		$("#sixth_target span").remove();
 		$('<span>' + sixthPercent + ";" + ' /* ' + sixthWidth + ' / ' + contextWidth + ' */ </span>').appendTo('#sixth_target');
